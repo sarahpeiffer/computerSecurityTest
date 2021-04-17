@@ -11,10 +11,12 @@ function submitForm() {
         size = "large";
     }
     console.log(size);
-    document.getElementById("form").reset();
+    console.log(document.getElementById("honeypot").value);
     if(document.getElementById("honeypot").value != "") {
         console.log("bot detected");
     }
+    document.getElementById("form").reset();
+
 
 
 }
