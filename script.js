@@ -12,6 +12,8 @@ function submitForm() {
     }
     console.log(size);
     document.getElementById("form").reset();
-
+    if(document.getElementById("honeypot").value != "") {
+        console.log("bot detected");
+    }
 
 }
