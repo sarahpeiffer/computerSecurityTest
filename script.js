@@ -13,10 +13,16 @@ function submitForm() {
     console.log(size);
     console.log(document.getElementById("honeypot").value);
     if(document.getElementById("honeypot").value != "") {
-        console.log("bot detected");
+        botDetected();
+    }
+    else {
+        alert("successful form submit");
     }
     document.getElementById("form").reset();
 
+}
 
-
+function botDetected() {
+    console.log("bot detected");
+    alert("bot activity detected");
 }
